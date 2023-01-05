@@ -1,0 +1,178 @@
+@font-face {
+   font-family: pricedown bl;
+   src: url("fonts/pricedown\ bl.otf") format("opentype");
+}
+@font-face {
+   font-family: high;
+   src: url("fonts/high-mount.personal-use.otf") format("opentype");
+}
+
+
+body {
+   background-color: #1f1f1f;
+   margin: 0;
+   position: relative;
+   height: 100vh;
+}
+
+ .banniere {
+   background-image: 
+      url("assets/skyrim1.jpg");
+   background-repeat: no-repeat;
+   background-position:  center 35%;
+   object-fit: cover;
+   height: 600px;
+   width: 100%;
+   z-index: 2;
+   /* marvel9 */
+} 
+ .stray {
+   
+   font-size: 40px;
+   font-family: 'Noto Sans JP', sans-serif;
+} 
+ .strayprice {
+   
+   font-size: 50px;
+   font-family: 'Noto Sans JP', sans-serif;
+} 
+a{
+   text-decoration: none;
+   color: #AAEF71;
+}
+h1 {
+   font-family: high;
+   color: #AAEF71;
+   font-size: 20px;
+   text-align: center;
+   margin-top: 0;
+
+}
+
+img {
+   width: 405px;
+   height: 251px;
+   z-index: 1;
+   border-radius: 5%;
+   position: absolute;
+}
+
+.cardparent {
+   display: inline-block;
+   margin-right: 10px;
+   margin-left: 10px;
+ 
+}
+.card {
+   width: 405px;
+   height: 251px;
+   
+  
+}
+
+video {
+   width: 405px;
+   height: 251px;
+   overflow: hidden;
+   object-fit: cover;
+   border-radius: 5%;
+   position: absolute;
+
+}
+
+.information {
+   color: #AAEF71;
+   font-family: 'Noto Sans JP', sans-serif;
+   display: flex;
+   width: 404px;
+   
+}
+
+.price {
+   margin-left: auto;
+   font-size: 19px;
+   margin-top: 13px;
+}
+
+.allcard {
+   width: 1712px;
+   margin: auto;
+
+}
+
+
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1707px){
+   .allcard {
+      width: 1283px;
+      margin: auto;
+   }
+      
+}
+
+@media only screen and (max-width: 1297px){
+   .allcard {
+      width: 854px;
+      margin: auto;
+   }
+}
+@media only screen and (max-width: 869px){
+   
+   .allcard {
+      width: 340px;
+      margin: auto;
+   }
+   
+   img {
+      width: 320px;
+      height: 251px;
+      z-index: 1;
+      border-radius: 5%;
+      position: absolute;
+   
+   }
+   video {
+      width: 320px;
+      height: 251px;
+      overflow: hidden;
+      object-fit: cover;
+      border-radius: 5%;
+      position: absolute;
+   
+   }
+   .card {
+      width: 320px;
+      height: 251px;
+      
+     
+   }
+
+  
+}
