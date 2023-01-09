@@ -27,9 +27,15 @@ require_once("lib/recherche.php");
 
 <form method="GET" class="form"> 
 <div class="inputGroup">
-    <input type="search" name="r" type="text" required="" autocomplete="off">
+<button type="input">Envoyer</button>
+    <input type="search" name="r" type="text" required="" autocomplete="off" >
+    
+    
     <label for="name">Recherche Jeux</label>
+    
+    
 </div>
+
 </form>
 
 

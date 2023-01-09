@@ -164,6 +164,35 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
    color: #AAEF71;
 }
 
+button {
+   font-family: monospace;
+  font-size: 1.5rem;
+  color: #AAEF71;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid #FAFAFA;
+  background: #252525;
+  margin-left: 501px;
+  cursor: pointer;
+  position: absolute;
+}
+button:active {
+   box-shadow: none;
+   transform: translate(3px, 3px);
+ }
+     
+     
+     
+    
+     
+    
+      
+    
+   
+
+
+
   
 /*********************************************************************************************************************************************************/
   
