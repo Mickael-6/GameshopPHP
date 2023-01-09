@@ -14,29 +14,66 @@ require_once("lib/recherche.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="homestyle.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+  
 </head>
 <body>
-<h1>GameShop</h1>
-<a class href="#"><div class="banniere"><p class="stray">Stray</p><p class="strayprice">20€</p></div></a> 
+<h1>GAMESHOP</h1>
+<div class="banniere"><h2>GAMESHOP</h2> <p class="soustitre">Jeux PC, PS5, PS4, XBOX, Switch.</p></div>
 
-    <form method="GET">
-       <input type="search" name="r" placeholder="rechercher">
-       <input type="submit">
-
-    </form>
+    
 
 
+<form method="GET" class="form"> 
+<div class="inputGroup">
+    <input type="search" name="r" type="text" required="" autocomplete="off">
+    <label for="name">Recherche Jeux</label>
+</div>
+</form>
 
 
-    <div class="allcard">
 
-              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
     
-    <section>
-        <?php 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+<div class="allcard">
+
+<section>
+    <?php 
         if($allusers->rowCount() >0){
             while($users = $allusers->fetch()){
                 ?>
