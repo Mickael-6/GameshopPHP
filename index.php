@@ -16,6 +16,7 @@ require_once("lib/recherche.php");
     <link rel="stylesheet" href="homestyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41a8ece914.js" crossorigin="anonymous"></script>
   
 </head>
 <body>
@@ -27,7 +28,7 @@ require_once("lib/recherche.php");
 
 <form method="GET" class="form"> 
 <div class="inputGroup">
-<button type="input">Envoyer</button>
+<button type="input"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
     <input type="search" name="r" type="text" required="" autocomplete="off" >
     
     
@@ -78,19 +79,20 @@ require_once("lib/recherche.php");
 
 <div class="allcard">
 
-<section>
+
     <?php 
         if($allusers->rowCount() >0){
             while($users = $allusers->fetch()){
                 ?>
-                     <div class="cardparent">
+        <div class="cardparent">
         <div class="card">
+        <div class="promo"> <p class="pourcent"><?php echo $users['pourcent']?>%</p></div>
         <img class="reddead" src="assets/<?php echo $users['image'];?>" alt="">
         <a href="#">
             <video class="video" muted loop  src="<?php echo $users['video']?>;" type="video/webm"></video>
         </a>
     </div>
-    <div class="information"><p class="titre"><?php echo $users['titre'];?></p><p class="price">24.99€</p></div>
+    <div class="information"><p class="titre"><?php echo $users['titre'];?></p><p class="price"><?php echo $users['price'];?>€</p></div>
     </div>
                 
                 
@@ -104,8 +106,7 @@ require_once("lib/recherche.php");
     
     <?php } ?>
         
-    </section>
- 
+    
     
 
   

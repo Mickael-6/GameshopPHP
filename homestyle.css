@@ -79,6 +79,25 @@ img {
    
   
 }
+.promo {
+   background-color:#1f1f1f ;
+   width: 40px;
+   height: 25px;
+   margin-left:355px;
+   margin-top: 10px;
+   border-radius: 25%;
+   position: absolute;
+   z-index: 2;
+}
+
+.pourcent{
+   font-size: 14px;
+   color: #AAEF71;
+   margin: auto;
+   margin-left: 7px;
+   margin-top: 4px;
+   font-family: 'Roboto', sans-serif;
+}
 
 video {
    width: 405px;
@@ -169,56 +188,19 @@ button {
   font-size: 1.5rem;
   color: #AAEF71;
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 8px 20px;
   border-radius: 20px;
   border: 2px solid #FAFAFA;
   background: #252525;
-  margin-left: 501px;
+  margin-left: 86.4%;
   cursor: pointer;
   position: absolute;
+  
 }
-button:active {
-   box-shadow: none;
-   transform: translate(3px, 3px);
- }
-     
-     
-     
-    
-     
-    
-      
-    
-   
 
-
-
+     
+/**********************************************************************RESPONSIVE*******************************************************************************/
   
-/*********************************************************************************************************************************************************/
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 1707px){
    .allcard {
       width: 1283px;
@@ -235,13 +217,79 @@ button:active {
 }
 @media only screen and (max-width: 869px){
    
-   .allcard {
-      width: 340px;
+    .allcard {
+      width: 405px;
       margin: auto;
    }
+   .cardparent {
+      width:405px;
+      margin-right: 0;
+    margin-left: 0;
+    
+      
+   }
+
+   button {
+      font-family: monospace;
+     font-size: 1.5rem;
+     color: #AAEF71;
+     text-transform: uppercase;
+     padding: 8px 20px;
+     border-radius: 20px;
+     border: 2px solid #FAFAFA;
+     background: #252525;
+     margin-left: 86.4%;
+     cursor: pointer;
+     position: absolute;
+   }
+  
    
-   img {
-      width: 320px;
+  
+}
+
+@media only screen and (max-width: 543px){
+   h2 {
+      color: #AAEF71;
+      text-shadow: 4px 0px #60d394;
+      font-size: 65px;
+      text-align: center;
+      font-family: 'Paytone One', sans-serif;
+      letter-spacing: 2px;
+      margin: 0;
+      padding-top: 120px;
+   }
+   .inputGroup {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 1em 0 1em 0;
+      max-width: 350px;
+      position: relative;
+      margin: auto;
+    }
+  
+}
+
+
+@media only screen and (max-width: 442px){
+   .allcard {
+     width:350px;
+     margin: auto;
+    
+     
+  }
+  
+   
+   .cardparent {
+     width:350px;
+     margin-right: 0;
+   margin-left: 0;
+   margin: auto;
+     
+  }
+  
+   
+   
+    img {
+      width: 350px;
       height: 251px;
       z-index: 1;
       border-radius: 5%;
@@ -249,7 +297,7 @@ button:active {
    
    }
    video {
-      width: 320px;
+      width: 350px;
       height: 251px;
       overflow: hidden;
       object-fit: cover;
@@ -262,7 +310,38 @@ button:active {
       height: 251px;
       
      
+   }  
+   h2 {
+      color: #AAEF71;
+      text-shadow: 4px 0px #60d394;
+      font-size: 55px;
+      text-align: center;
+      font-family: 'Paytone One', sans-serif;
+      letter-spacing: 2px;
+      margin: 0;
+      padding-top: 120px;
+   }
+  
+   button {
+      font-family: monospace;
+     font-size: 1.5rem;
+     color: #AAEF71;
+     text-transform: uppercase;
+     padding: 8px 20px;
+     border-radius: 20px;
+     border: 2px solid #FAFAFA;
+     background: #252525;
+     margin-left: 80.4%;
+     cursor: pointer;
+     position: absolute;
    }
 
+   .information {
+      color: #AAEF71;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      width: 350px;
+      
+   }
   
 }
