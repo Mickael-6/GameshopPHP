@@ -1,6 +1,4 @@
 <?php 
-require_once("lib/connexion.php");
-require_once("lib/select_produit.php");
 require_once("lib/recherche.php");
 
 
@@ -40,59 +38,22 @@ require_once("lib/recherche.php");
 </form>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
 <div class="allcard">
 
 
     <?php 
-        if($allusers->rowCount() >0){
-            while($users = $allusers->fetch()){
+        if($allproduits->rowCount() >0){
+            while($produit = $allproduits->fetch()){
                 ?>
         <div class="cardparent">
         <div class="card">
-        <div class="promo"> <p class="pourcent"><?php echo $users['pourcent']?>%</p></div>
-        <img class="reddead" src="assets/<?php echo $users['image'];?>" alt="">
-        <a href="#">
-            <video class="video" muted loop  src="<?php echo $users['video']?>;" type="video/webm"></video>
+        <div class="promo"> <p class="pourcent"><?php echo $produit['pourcent']?>%</p></div>
+        <img class="imagejeu" src="assets/<?php echo $produit['image'];?>" alt="">
+        <a href="single_article/index.php?id_produit=<?php echo $produit['id_produit']; ?>">
+            <video class="video" muted loop  src="<?php echo $produit['video']?>;" type="video/webm"></video>
         </a>
     </div>
-    <div class="information"><p class="titre"><?php echo $users['titre'];?></p><p class="price"><?php echo $users['price'];?>€</p></div>
+    <div class="information"><p class="titre"><?php echo $produit['titre'];?></p><p class="price"><?php echo $produit['price'];?>€</p></div>
     </div>
                 
                 

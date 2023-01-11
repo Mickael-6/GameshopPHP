@@ -1,7 +1,12 @@
 <?php 
- $sqlProduit ="SELECT * FROM `produit`";
- $produit_table = mysqli_query($connexion, $sqlProduit);
- $produit_resultat = mysqli_fetch_all($produit_table,MYSQLI_ASSOC);
+require_once("../lib/connexion.php");
+  
+if (!empty($_GET['id_produit'])) {
+
+    $allproduits =$connexion->query ("SELECT * FROM `produit`");
+}
+
+
 
 
 ?>
