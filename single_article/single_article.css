@@ -2,11 +2,37 @@ body {
     background-color: #1f1f1f;
     margin: 0;
  }
-
+ nav {
+   background-color:#141414;
+   height: 65px;
+ }
  img {
-    width: 405px;
-    height: 251px;
+   
+   height:600px ;
+   width: 455px;
     z-index: 1;
-    border-radius: 5%;
-    position: absolute;
+    
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+
+ }
+
+ .card {
+  background-color: #141414;
+  height: 600px;
+  width: 1400px;
+  margin-top: 100px;
+  margin-left: 150px;
+  border-radius: 2%;
+  display:flex;
+  justify-content:flex-start;
+  text-align: center;
+  }
+
+ .titre {
+  color: #AAEF71;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  
  }
