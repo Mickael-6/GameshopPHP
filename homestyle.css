@@ -65,17 +65,24 @@ img {
 }
 .allcard{
    padding-top: 30px;
+  
+   margin: auto;
+   
+   
 }
 .cardparent {
    display: inline-block;
-   margin-right: 10px;
-   margin-left: 10px;
    
+   margin-right: 14px;
+   margin-left: 14px;
+  
+    
  
 }
 .card {
    width: 405px;
    height: 251px;
+   
    
   
 }
@@ -124,7 +131,7 @@ video {
 }
 
 .allcard {
-   width: 1712px;
+   width: 1745px;
    margin: auto;
 
 }
@@ -201,25 +208,24 @@ button {
      
 /**********************************************************************RESPONSIVE*******************************************************************************/
   
-@media only screen and (max-width: 1707px){
+@media only screen and (max-width: 1755px){
    .allcard {
-      width: 1283px;
-      margin: auto;
+      width: 1307px;
    }
       
 }
 
-@media only screen and (max-width: 1297px){
+@media only screen and (max-width: 1320px){
    .allcard {
-      width: 854px;
-      margin: auto;
+      width: 870px;
+     
    }
 }
 @media only screen and (max-width: 869px){
    
     .allcard {
       width: 405px;
-      margin: auto;
+      
    }
    .cardparent {
       width:405px;
@@ -272,7 +278,7 @@ button {
 @media only screen and (max-width: 442px){
    .allcard {
      width:350px;
-     margin: auto;
+     
     
      
   }
@@ -282,7 +288,7 @@ button {
      width:350px;
      margin-right: 0;
    margin-left: 0;
-   margin: auto;
+   
      
   }
   

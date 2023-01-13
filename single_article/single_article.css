@@ -1,3 +1,6 @@
+*{
+  margin :0;
+}
 body {
     background-color: #1f1f1f;
     margin: 0;
@@ -8,8 +11,8 @@ body {
  }
  img {
    
-   height:600px ;
-   width: 455px;
+   height:730px ;
+   width: 555px;
     z-index: 1;
     
     border-top-left-radius: 2%;
@@ -19,8 +22,8 @@ body {
 
  .card {
   background-color: #141414;
-  height: 600px;
-  width: 1400px;
+  height: 730px;
+  width: 1500px;
   margin-top: 100px;
   margin-left: 150px;
   border-radius: 2%;
@@ -28,19 +31,32 @@ body {
   justify-content:flex-start;
   text-align: center;
   }
-
+ .texte {
+   width: 100%;
+ }
  .titre {
   color: #AAEF71;
   width: 100%;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 25px;
-  
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
  }
  .intro {
   color: #AAEF71;
-  width: 100%;
+  width: 879px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  text-align: left;
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
+  margin: auto;
+ }
+ video {
+  width: 640px;
+  height: 350px;
   
  }
  .stock {
@@ -48,13 +64,15 @@ body {
   width: 100%;
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
- 
+  padding-bottom: 20px ;
  }
  .prix {
   color: #AAEF71;
   width: 100%;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 15px;
+  font-size: 30px;
+  padding-bottom: 20px ;
+  
  
  }
 
@@ -76,14 +94,14 @@ body {
  .button {
  display: inline-block;
  padding: 12px 24px;
- 
+ background-color: #141414;
  border: 1px solid #4f4f4f;
  border-radius: 4px;
  transition: all 0.2s ease-in;
  position: relative;
  overflow: hidden;
  font-size: 19px;
- color:#141414;
+ color:white;
  z-index: 1;
 }
 

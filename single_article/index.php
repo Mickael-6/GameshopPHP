@@ -33,7 +33,7 @@ require_once("../lib/select_produit.php");
 
              echo '<p class="stock"><i class="fa-brands fa-steam"></i>  Steam | En Stock : <i class="fa-regular fa-circle-xmark"></i>   </p>' ;  
              } ?> 
-            
+            <video class="video"  muted loop autoplay  src="<?php echo $produit['videocard']?>;" type="video/webm"></video>
             <p class="intro"><?php echo $produit['introduction'];?></p>
             <p class="prix"><?php echo $produit['price'];?>€ </p>
             <button class="button"><i class="fa-solid fa-basket-shopping"></i></button>
