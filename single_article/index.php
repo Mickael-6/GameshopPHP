@@ -16,7 +16,7 @@ require_once("../lib/select_produit.php");
     <title>Document</title>
 </head>
 <body>
-    <nav></nav>
+    <nav><a href="../index.php"><h1>GAMESHOP</h1></a></nav>
 
 <?php foreach ($allproduits as $produit) {  ?>
         <?php if ($produit['id_produit'] == $_GET['id_produit']) { ?>
@@ -35,7 +35,10 @@ require_once("../lib/select_produit.php");
              } ?> 
             <video class="video"  muted loop autoplay  src="<?php echo $produit['videocard']?>;" type="video/webm"></video>
             <p class="intro"><?php echo $produit['introduction'];?></p>
-            <p class="prix"><?php echo $produit['price'];?>€ </p>
+           
+            <p class="prix"> <?php echo $produit['price'];?>€  </p>
+           
+          
             <button class="button"><i class="fa-solid fa-basket-shopping"></i></button>
             <button class="button"> Acheter</button>
             
