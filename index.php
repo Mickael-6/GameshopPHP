@@ -18,7 +18,7 @@ require_once("lib/recherche.php");
   
 </head>
 <body>
-<h1>GAMESHOP</h1>
+<nav><h1>GAMESHOP</h1> <button class="connexion"><i class="fa-solid fa-user"></i></button></nav>
 <div class="banniere"><h2>GAMESHOP</h2> <p class="soustitre">Jeux PC, PS5, PS4, XBOX, Switch.</p></div>
 
     
