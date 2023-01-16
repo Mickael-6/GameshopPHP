@@ -1,6 +1,9 @@
 <?php 
 require_once("../lib/select_produit.php");
-require_once("../lib/randomproduit.php");
+require_once("../lib/random_article.php");
+require_once("../lib/display.php");
+
+
 
 ?>
 
@@ -53,9 +56,17 @@ require_once("../lib/randomproduit.php");
             
        <?php } ?>
        <?php } ?>
+<?php
+       while ($prod = $randomproduit->fetch(PDO::FETCH_ASSOC))   { ?>
+      <?php if($prod['display'] ==  0){ ?>
+        <?php if( $prod['id_produit'] != $_GET['id_produit'] ){ ?>
+         <img class="imagejeu" src="../assets/<?php echo $prod['image'];?>" alt="">
+<?php   }?>
+<?php   }?>
+<?php   }?>
 
 
-<p class="titre"><?php echo $randomproduit['titre'];?></p>
+
 
 
 

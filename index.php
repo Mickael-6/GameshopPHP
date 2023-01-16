@@ -54,6 +54,7 @@ require_once("lib/recherche.php");
         </a>
     </div>
     <div class="information"><p class="titre"><?php echo $produit['titre'];?></p><p class="price"><?php echo $produit['price'];?>€</p></div>
+    
     </div>
                 
                 
