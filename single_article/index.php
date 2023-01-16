@@ -1,5 +1,7 @@
 <?php 
 require_once("../lib/select_produit.php");
+require_once("../lib/randomproduit.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +18,7 @@ require_once("../lib/select_produit.php");
     <title>Document</title>
 </head>
 <body>
-    <nav><a href="../index.php"><h1>GAMESHOP</h1></a></nav>
+    <nav><a href="../index.php"><h1>GAMESHOP</h1></a><button class="connexion"><i class="fa-solid fa-user"></i></button></nav>
 
 <?php foreach ($allproduits as $produit) {  ?>
         <?php if ($produit['id_produit'] == $_GET['id_produit']) { ?>
@@ -39,8 +41,8 @@ require_once("../lib/select_produit.php");
             <p class="prix"> <?php echo $produit['price'];?>€  </p>
            
           
-            <button class="button"><i class="fa-solid fa-basket-shopping"></i></button>
-            <button class="button"> Acheter</button>
+            <button class="achat"><i class="fa-solid fa-basket-shopping"></i></button>
+            <button class="achat"> Acheter</button>
             
             
             </div>
@@ -50,7 +52,13 @@ require_once("../lib/select_produit.php");
           
             
        <?php } ?>
-<?php } ?>
+       <?php } ?>
+
+
+<p class="titre"><?php echo $randomproduit['titre'];?></p>
+
+
+
 
 </body>
 </html>

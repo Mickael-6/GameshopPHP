@@ -41,6 +41,7 @@ nav {
    width: 100%;
    z-index: 3;
    display: flex;
+   
 }
 
 
@@ -309,6 +310,8 @@ form button {
 
 /**********************************************************************RESPONSIVE*******************************************************************************/
 
+
+
 @media only screen and (max-width: 1755px) {
    .allcard {
       width: 1307px;
@@ -467,5 +470,232 @@ form button {
       position: absolute;
       z-index: 2;
    }
+
+}
+
+/************************************************************** RESPONSIVE CONNEXION **************************************************************/
+
+@media only screen and (max-width: 1858px) {
+   h1 {
+      color: #AAEF71;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-left: 50px;
+      padding-right: 86%;
+      margin: 0;
+      
+      font-family: 'Paytone One', sans-serif;
+   }
+   
+
+}
+@media only screen and (max-width: 1701px) {
+   h1 {
+      color: #AAEF71;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-left: 50px;
+      padding-right: 84%;
+      margin: 0;
+      
+      font-family: 'Paytone One', sans-serif;
+   }
+   
+
+}
+@media only screen and (max-width: 1548px) {
+   h1 {
+      color: #AAEF71;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-left: 50px;
+      padding-right: 82%;
+      margin: 0;
+      
+      font-family: 'Paytone One', sans-serif;
+   }
+   
+
+}
+@media only screen and (max-width: 1317px) {
+   h1 {
+      color: #AAEF71;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-left: 50px;
+      padding-right: 79%;
+      margin: 0;
+      
+      font-family: 'Paytone One', sans-serif;
+   }
+   
+
+}
+@media only screen and (max-width: 1182px) {
+   h1 {
+      color: #AAEF71;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-left: 50px;
+      padding-right: 77%;
+      margin: 0;
+      
+      font-family: 'Paytone One', sans-serif;
+   }
+   
+
+}
+@media only screen and (max-width: 1090px) {
+   h1 {
+      color: #AAEF71;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-left: 50px;
+      padding-right: 75%;
+      margin: 0;
+      
+      font-family: 'Paytone One', sans-serif;
+   }
+   
+
+}
+@media only screen and (max-width: 990px) {
+   h1 {
+      color: #AAEF71;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-left: 50px;
+      padding-right: 73%;
+      margin: 0;
+      
+      font-family: 'Paytone One', sans-serif;
+   }
+   
+
+}
+@media only screen and (max-width: 897px) {
+   h1 {
+      color: #AAEF71;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-left: 50px;
+      padding-right: 71%;
+      margin: 0;
+      
+      font-family: 'Paytone One', sans-serif;
+   }
+   
+
+}
+@media only screen and (max-width: 834px) {
+   h1 {
+      color: #AAEF71;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-left: 50px;
+      padding-right: 68%;
+      margin: 0;
+      
+      font-family: 'Paytone One', sans-serif;
+   }
+   
+
+}
+@media only screen and (max-width: 767px) {
+   h1 {
+      color: #AAEF71;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-left: 50px;
+      padding-right: 64%;
+      margin: 0;
+      
+      font-family: 'Paytone One', sans-serif;
+   }
+   
+
+}
+@media only screen and (max-width: 685px) {
+   h1 {
+      color: #AAEF71;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-left: 50px;
+      padding-right: 61%;
+      margin: 0;
+      
+      font-family: 'Paytone One', sans-serif;
+   }
+   
+
+}
+@media only screen and (max-width: 624px) {
+   h1 {
+      color: #AAEF71;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-left: 50px;
+      padding-right: 58%;
+      margin: 0;
+      
+      font-family: 'Paytone One', sans-serif;
+   }
+   
+
+}
+@media only screen and (max-width: 575px) {
+   h1 {
+      color: #AAEF71;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-left: 50px;
+      padding-right: 50%;
+      margin: 0;
+      
+      font-family: 'Paytone One', sans-serif;
+   }
+   
+
+}
+@media only screen and (max-width: 485px) {
+   h1 {
+      color: #AAEF71;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-left: 50px;
+      padding-right: 45%;
+      margin: 0;
+      
+      font-family: 'Paytone One', sans-serif;
+   }
+   
+
+}
+@media only screen and (max-width: 444px) {
+   h1 {
+      color: #AAEF71;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-left: 50px;
+      padding-right: 35%;
+      margin: 0;
+      
+      font-family: 'Paytone One', sans-serif;
+   }
+   
+
+}
+@media only screen and (max-width: 380px) {
+   h1 {
+      color: #AAEF71;
+      font-size: 20px;
+      padding-top: 16px;
+      padding-left: 50px;
+      padding-right: 30%;
+      margin: 0;
+      
+      font-family: 'Paytone One', sans-serif;
+   }
+   
 
 }
