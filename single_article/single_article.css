@@ -67,7 +67,6 @@ h1 {
   width: 879px;
   padding-top: 20px;
   padding-bottom: 20px;
-
   text-align: left;
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
@@ -273,7 +272,24 @@ h1 {
       margin-top: 5px;
       font-family: 'Roboto', sans-serif;
     }
-
+    .promo {
+      background-color: #1f1f1f;
+      width: 40px;
+      height: 25px;
+      margin-left: 305px;
+      margin-top: 6px;
+      border-radius: 25%;
+      position: absolute;
+      z-index: 2;
+   }
+   .pourcent {
+    font-size: 14px;
+    color: #AAEF71;
+    margin: auto;
+    margin-left: 7px;
+    margin-top: 4px;
+    font-family: 'Roboto', sans-serif;
+ }
 
 /************************************************************** RESPONSIVE CONNEXION **************************************************************/
 
@@ -424,4 +440,140 @@ h1 {
 
 }
 
+/***************************************************************** RESPONSIVE CARD ****************************************************************/
+@media only screen and (max-width: 1448px) {
+ 
+  .intro {
+    color: #AAEF71;
+    width: 679px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    margin: auto;
+   }
 
+   .texte {
+   
+    margin: auto;
+    
+  }
+  .card {
+    background-color: #141414;
+    height: 730px;
+    width: 100%;
+    margin: auto;
+    border-radius: 2%;
+    display:flex;
+    justify-content:flex-start;
+    text-align: center;
+    margin-bottom: 130px;
+    
+    }
+   
+
+}
+@media only screen and (max-width: 1393px) {
+ 
+
+  .texte {
+   
+    margin: auto;
+    
+  }
+  .card {
+    background-color: #141414;
+    height: 730px;
+    width: 100%;
+    margin: auto;
+    border-radius: 2%;
+    display:flex;
+    justify-content:flex-start;
+    text-align: center;
+    margin-bottom: 130px;
+    
+    }
+
+
+}
+@media only screen and (max-width: 1331px) {
+ 
+
+   .texte {
+   
+    margin: auto;
+    
+  }
+
+  .imagejeu { 
+    height:730px ;
+    width: 555px;
+    z-index: 1; 
+    display: none;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+  }
+
+  .card {
+    background-color: #141414;
+    height: 730px;
+    width: 100%;
+    margin: auto;
+    border-radius: 2%;
+    display:flex;
+    justify-content:flex-start;
+    text-align: center;
+    margin-bottom: 130px;
+    
+    }
+
+}
+@media only screen and (max-width: 676px) {
+ 
+  video {
+    width: 479px;
+    height: 350px;
+    
+   }
+   .texte {
+   
+    margin: auto;
+    
+  }
+  .intro {
+    color: #AAEF71;
+    width: 479px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    margin: auto;
+   }
+
+}
+@media only screen and (max-width: 507px) {
+ 
+  video {
+    width: 90%;
+    height: 90%;
+    
+   }
+   .texte {
+   
+    margin: auto;
+    
+  }
+  .intro {
+    color: #AAEF71;
+    width: 279px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    margin: auto;
+   }
+
+}

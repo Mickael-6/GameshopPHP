@@ -64,7 +64,11 @@ require_once("../lib/display.php");
       <?php if($prod['display'] ==  0){ ?>
         <?php if( $prod['id_produit'] != $_GET['id_produit'] ){ ?>
             <div class="contenueimagechild">
-            <a class="lienimage" href="../single_article/index.php?id_produit=<?php echo $prod['id_produit']; ?>"><img class="imagerandom" src="../assets/<?php echo $prod['image'];?>" alt=""></a>
+            <div class="promo"> <p class="pourcent"><?php echo $produit['pourcent']?>%</p></div>
+            <a class="lienimage" href="../single_article/index.php?id_produit=<?php echo $prod['id_produit']; ?>"> 
+            <img class="imagerandom" src="../assets/<?php echo $prod['image'];?>" alt="">
+            </a>
+            
             <div class="info">
             <p class="titreimagerandom"><?php echo $prod['titre'];?></p>
             <p class="prix2"> <?php echo $prod['price'];?>€  </p>
