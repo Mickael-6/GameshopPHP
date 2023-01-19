@@ -18,68 +18,44 @@ require_once("lib/recherche.php");
   
 </head>
 <body>
-<nav><h1>GAMESHOP</h1> <button class="connexion"><i class="fa-solid fa-user"></i></button></nav>
-<div class="banniere"><h2>GAMESHOP</h2> <p class="soustitre">Jeux PC, PS5, PS4, XBOX, Switch.</p></div>
+<nav>
+ <h1>GAMESHOP</h1> 
+ <button class="connexion"><i class="fa-solid fa-user"></i></button>
+</nav>
 
-    
-
+<div class="banniere">
+ <h2>GAMESHOP</h2> 
+ <p class="soustitre">Jeux PC, PS5, PS4, XBOX, Switch.</p>
+</div>
 
 <form method="GET" class="form"> 
-<div class="inputGroup">
-<button type="input"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
-    <input type="search" name="r" type="text" required="" autocomplete="off" >
-    
-    
-    <label for="name">Recherche Jeux</label>
-    
-    
-</div>
-
+ <div class="inputGroup">
+  <button type="input"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+  <input type="search" name="r" type="text" required="" autocomplete="off" >
+  <label for="name">Recherche Jeux</label>
+ </div>
 </form>
 
-
 <div class="allcard">
+ <?php 
+    if($allproduits->rowCount() > 0){
+     while($produit = $allproduits->fetch()) { ?>
+     <div class="cardparent">
+       <div class="card">
+       <div class="promo"> <p class="pourcent"><?php echo $produit['pourcent']?>%</p></div>
+       <img class="imagejeu" src="assets/<?php echo $produit['image'];?>" alt="">
+       <a href="single_article/index.php?id_produit=<?php echo $produit['id_produit']; ?>">
+       <video class="video" muted loop  src="<?php echo $produit['video']?>;" type="video/webm"></video>
+       </a>
+       </div>
+       <div class="information"><p class="titre"><?php echo $produit['titre'];?></p><p class="price"><?php echo $produit['price'];?>€</p></div>
+     </div>     
+<?php } 
+     }else{ ?>
+      <p>aucune utilisateur trouvé</p>
 
-
-    <?php 
-        if($allproduits->rowCount() >0){
-            while($produit = $allproduits->fetch()){
-                ?>
-        <div class="cardparent">
-        <div class="card">
-        <div class="promo"> <p class="pourcent"><?php echo $produit['pourcent']?>%</p></div>
-        <img class="imagejeu" src="assets/<?php echo $produit['image'];?>" alt="">
-        <a href="single_article/index.php?id_produit=<?php echo $produit['id_produit']; ?>">
-            <video class="video" muted loop  src="<?php echo $produit['video']?>;" type="video/webm"></video>
-        </a>
-    </div>
-    <div class="information"><p class="titre"><?php echo $produit['titre'];?></p><p class="price"><?php echo $produit['price'];?>€</p></div>
-    
-    </div>
-                
-                
-                 
-                <?php } 
-
-        }else{
-          ?>
-        <p>aucune utilisateur trouvé</p>
-
-    
-    <?php } ?>
-        
-    
-    
-
-  
-
-    
+<?php } ?>   
 </div>
-
-
-
-
-
 </body>
 <script src="animation.js"></script>
 </html>
@@ -93,4 +69,4 @@ require_once("lib/recherche.php");
 
 
 
-<!-- https://s1.gaming-cdn.com/videos/products/5679/800x450/red-dead-redemption-2-pc-jeu-rockstar-preview.webm?v=1657034665 -->
+
