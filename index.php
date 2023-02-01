@@ -20,7 +20,8 @@ require_once("lib/recherche.php");
 <body>
 <nav>
  <h1>GAMESHOP</h1> 
- <button class="connexion"><i class="fa-solid fa-user"></i></button>
+ <button class="connexion">Connexion</button>
+ <button class="connexio">Inscription</button>
 </nav>
 
 <div class="banniere">
