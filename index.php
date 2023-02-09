@@ -22,7 +22,7 @@ require_once("lib/recherche.php");
  <h1>GAMESHOP</h1> 
  <div class="allbutton">
  <button  class="connexion" onclick="window.location.href='connexion/connexion.php'"><i class="fa-solid fa-user"></i> Connexion</button>
- <button class="inscription"><i class="fa-solid fa-scroll"></i> Inscription</button>
+ <button class="inscription" onclick="window.location.href='inscription/inscription.php'"><i class="fa-solid fa-scroll"></i> Inscription</button>
  </div>
 </nav>
 
