@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V3</title>
+	<title>Inscription</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -24,7 +24,7 @@
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="../inscription/css/inscription.css">
 <!--===============================================================================================-->
 <script src="https://kit.fontawesome.com/41a8ece914.js" crossorigin="anonymous"></script>
 <!--===============================================================================================-->
@@ -32,7 +32,7 @@
 <body>
 	
 	<div class="limiter">
-		<div class="container-login100" style="background-image: url('images/reddead.jpg');">
+		<div class="container-login100" style="background-image: url('../inscription/images/godofwar.png');">
 			<div class="wrap-login100">
 				<form class="login100-form validate-form">
 					<span class="login100-form-logo">
@@ -44,12 +44,12 @@
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="username" placeholder="Email">
+						<input class="input100" type="text" name="username" placeholder="Email" autocomplete="off">
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="pass" placeholder="Mot de passe">
+						<input class="input100" type="password" name="pass" placeholder="Mot de passe" autocomplete="off">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
 
@@ -57,15 +57,11 @@
 
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
-							Login
+							Inscription
 						</button>
 					</div>
 
-					<div class="text-center p-t-23">
-						<a class="txt1" href="#">
-							Forgot Password?
-						</a>
-					</div>
+					
 				</form>
 			</div>
 		</div>

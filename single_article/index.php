@@ -1,10 +1,8 @@
 <?php
+session_start();
 require_once("../lib/select_produit.php");
 require_once("../lib/random_article.php");
 require_once("../lib/display.php");
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -27,10 +25,14 @@ require_once("../lib/display.php");
     <a class="retourindex" href="../index.php">
       <h1>GAMESHOP</h1>
     </a>
-    <div class="allbutton">
-      <button class="connexion"><i class="fa-solid fa-user"></i> Connexion</button>
-      <button class="inscription"><i class="fa-solid fa-scroll"></i> Inscription</button>
-    </div>
+    <?php if (empty($_SESSION)) {  ?>
+ <div class="allbutton">
+ <button  class="connexion" onclick="window.location.href='../connexion/connexion.php'"><i class="fa-solid fa-user"></i> Connexion</button>
+ <button class="inscription" onclick="window.location.href='../inscription/inscription.php'"><i class="fa-solid fa-scroll"></i> Inscription</button>
+ </div>
+ <?php } else { ?>
+  <button  class="connexion" onclick="window.location.href='../lib/deconnexion.php'" ><i class="fa-solid fa-user"></i> deconnexion</button>
+<?php } ?>
   </nav>
 
   <?php foreach ($allproduits as $produit) {  ?>
