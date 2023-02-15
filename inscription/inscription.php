@@ -1,3 +1,7 @@
+<?php
+require_once("../lib/user_inscription.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +38,7 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('../inscription/images/godofwar.png');">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" method="POST">
 					<span class="login100-form-logo">
 					<i class="fa-solid fa-user"></i>
 					</span>
@@ -44,12 +48,12 @@
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="username" placeholder="Email" autocomplete="off">
+						<input class="input100" type="text" name="email" placeholder="Email" autocomplete="off">
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="pass" placeholder="Mot de passe" autocomplete="off">
+						<input class="input100" type="password" name="mdp" placeholder="Mot de passe" autocomplete="off">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
 

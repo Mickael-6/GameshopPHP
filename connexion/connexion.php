@@ -57,7 +57,7 @@ require_once("../lib/user_connexion.php");
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="mdp" name="mdp" placeholder="Mot de passe" autocomplete="off">
+						<input class="input100" type="password" name="mdp" placeholder="Mot de passe" autocomplete="off">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
 
