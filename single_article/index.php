@@ -31,7 +31,7 @@ require_once("../lib/display.php");
  <button class="inscription" onclick="window.location.href='../inscription/inscription.php'"><i class="fa-solid fa-scroll"></i> Inscription</button>
  </div>
  <?php } else { ?>
-  <button  class="connexion" onclick="window.location.href='../lib/deconnexion.php'" ><i class="fa-solid fa-user"></i> deconnexion</button>
+  <button  class="deconnexion" onclick="window.location.href='../lib/deconnexion.php'" > <i class="fa-solid fa-circle-minus"></i> Deconnexion</button>
 <?php } ?>
   </nav>
 

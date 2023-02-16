@@ -34,6 +34,7 @@ require_once("../lib/user_connexion.php");
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/connexion.css">
 <!--===============================================================================================-->
+<!--===============================================================================================-->
 <script src="https://kit.fontawesome.com/41a8ece914.js" crossorigin="anonymous"></script>
 <!--===============================================================================================-->
 </head>
@@ -52,8 +53,12 @@ require_once("../lib/user_connexion.php");
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="email" name="email" placeholder="Email" autocomplete="off">
+						<input class="input100" type="text" name="email" placeholder="Pseudo" autocomplete="off">
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "Enter email">
+						<input class="input100" type="email" name="email" placeholder="Email" autocomplete="off">
+						<span class="focus-input100" data-placeholder="&#xf154;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">

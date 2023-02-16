@@ -211,6 +211,51 @@ h1 {
  .fa-user {
     margin-left: -7px;
  }
+ /* **********************************************************************BUTTON DECONNEXION********************************************************************************* */
+
+.deconnexion {
+  appearance: none;
+  background-color: #1f1f1f;
+  border: 0.125em solid #AAEF71;
+ 
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #AAEF71;
+  cursor: pointer;
+  
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-left: auto;
+  margin-right: 20px;
+  min-height: 3.75em;
+  min-width: 0;
+ 
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+ }
+ 
+ .deconnexion:disabled {
+  pointer-events: none;
+ }
+ 
+ .deconnexion:hover {
+  color: #1f1f1f;
+  background-color: #AAEF71;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+ 
+ }
+ 
+ .deconnexion:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
+ 
+ .fa-circle-minus {
+    margin-left: -7px;
+    padding-right: 5px;
+ }
  
  
  /* **********************************************************************BUTTON INSCRIPTION********************************************************************************* */
