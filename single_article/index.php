@@ -1,9 +1,10 @@
 <?php
 session_start();
-require_once('../lib/select_user_by_id.php');
 require_once("../lib/select_produit.php");
 require_once("../lib/random_article.php");
 require_once("../lib/display.php");
+require_once("../lib/connexion.php");
+require_once("../lib/select_user_by_pseudo.php");
 
 ?>
 

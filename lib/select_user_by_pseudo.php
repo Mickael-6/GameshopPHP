@@ -1,5 +1,4 @@
 <?php 
-require_once("../lib/connexion.php");
 
 	$id = $_SESSION['id_user'];
 

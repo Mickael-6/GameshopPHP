@@ -158,6 +158,9 @@ video {
    color: #AAEF71; 
    font-size: 18px;
    font-family: 'Paytone One', sans-serif;
+   padding-top:1px;
+   margin-left: auto;
+   margin-right: 10px;
 }
 .fa-user-check {
    margin-left: 10px;
@@ -295,7 +298,6 @@ form button {
  font-weight: 600;
  font-size: 14px;
  margin-top: 4px;
- margin-left: auto;
  margin-right: 20px;
  min-height: 3.75em;
  min-width: 0;
