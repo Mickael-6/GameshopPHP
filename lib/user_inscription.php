@@ -10,6 +10,7 @@ if(!empty( $_POST )){
 
 	$email = $_POST['email'];
 	$mdp = $_POST['mdp'];
+	$pseudo = $_POST['pseudo'];
 	
 
 
@@ -17,7 +18,7 @@ if(!empty( $_POST )){
 	// !empty() verifie si une variable est remplie
 
 
-	if( !empty($email) && !empty($mdp) ){
+	if( !empty($email) && !empty($mdp)&& !empty($pseudo) ){
 
 		// echo "Ok pour les champs !";
 
@@ -40,7 +41,7 @@ if(!empty( $_POST )){
 
 			    	// echo "0 correspondance, c'est bon !";
 
-			    	$sql_insert_user = "INSERT INTO `user` (`email`, `mdp`) VALUES ('$email', '$mdp');";
+			    	$sql_insert_user = "INSERT INTO `user` (`email`, `mdp`, `pseudo`) VALUES ('$email', '$mdp', '$pseudo');";
 			    	$connexion->query($sql_insert_user);
 
 

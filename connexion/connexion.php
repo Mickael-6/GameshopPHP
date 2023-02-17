@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once("../lib/user_connexion.php");
+
 ?>
 
 
@@ -9,7 +10,7 @@ require_once("../lib/user_connexion.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V3</title>
+	<title>Connexion</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -52,13 +53,10 @@ require_once("../lib/user_connexion.php");
 						CONNEXION
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="email" placeholder="Pseudo" autocomplete="off">
-						<span class="focus-input100" data-placeholder="&#xf207;"></span>
-					</div>
+					
 					<div class="wrap-input100 validate-input" data-validate = "Enter email">
 						<input class="input100" type="email" name="email" placeholder="Email" autocomplete="off">
-						<span class="focus-input100" data-placeholder="&#xf154;"></span>
+						<span class="focus-input100" data-placeholder="&#xf159;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">

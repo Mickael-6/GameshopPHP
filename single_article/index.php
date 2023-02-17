@@ -1,8 +1,10 @@
 <?php
 session_start();
+require_once('../lib/select_user_by_id.php');
 require_once("../lib/select_produit.php");
 require_once("../lib/random_article.php");
 require_once("../lib/display.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -31,6 +33,7 @@ require_once("../lib/display.php");
  <button class="inscription" onclick="window.location.href='../inscription/inscription.php'"><i class="fa-solid fa-scroll"></i> Inscription</button>
  </div>
  <?php } else { ?>
+  <p class="bienvenue"><?php echo $resultat_user_by_id['pseudo']?><i class="fa-solid fa-user-check"></i></p>
   <button  class="deconnexion" onclick="window.location.href='../lib/deconnexion.php'" > <i class="fa-solid fa-circle-minus"></i> Deconnexion</button>
 <?php } ?>
   </nav>

@@ -23,6 +23,7 @@ if (!empty($email)&& !empty($mdp) ) {
 
         $_SESSION['email'] = $_POST['email'];
         $_SESSION['mdp'] = $_POST['mdp'];
+        $_SESSION['pseudo'] = $_POST['pseudo'];
         header("Location: ../index.php");
     } else {
 

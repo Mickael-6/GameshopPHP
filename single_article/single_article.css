@@ -211,6 +211,14 @@ h1 {
  .fa-user {
     margin-left: -7px;
  }
+ .bienvenue {
+  color: #AAEF71; 
+  font-size: 18px;
+  font-family: 'Paytone One', sans-serif;
+}
+.fa-user-check {
+  margin-left: 10px;
+}
  /* **********************************************************************BUTTON DECONNEXION********************************************************************************* */
 
 .deconnexion {

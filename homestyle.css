@@ -88,8 +88,6 @@ img {
    padding-top: 30px;
 
    margin: auto;
-
-
 }
 
 .cardparent {
@@ -156,7 +154,14 @@ video {
    margin: auto;
 
 }
-
+.bienvenue {
+   color: #AAEF71; 
+   font-size: 18px;
+   font-family: 'Paytone One', sans-serif;
+}
+.fa-user-check {
+   margin-left: 10px;
+}
 
 /***************************************************************FORMULAIRE******************************************************************************/
 

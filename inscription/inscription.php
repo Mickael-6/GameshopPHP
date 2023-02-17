@@ -46,7 +46,11 @@ require_once("../lib/user_inscription.php");
 					<span class="login100-form-title p-b-34 p-t-27">
 						INSCRIPTION
 					</span>
-
+                    <div class="wrap-input100 validate-input" data-validate = "Enter username">
+						<input class="input100" type="text" name="pseudo" placeholder="Pseudo" autocomplete="off">
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+					
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
 						<input class="input100" type="text" name="email" placeholder="Email" autocomplete="off">
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
