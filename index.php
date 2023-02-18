@@ -21,13 +21,12 @@ require_once("lib/select_user_by_pseudo.php");
 <body>
 <nav>
  <h1>GAMESHOP</h1> 
- <?php if (isset($_SESSION)) {  ?>
+ <?php if (empty($_SESSION)) {  ?>
  <div class="allbutton">
  <button  class="connexion" onclick="window.location.href='connexion/connexion.php'"><i class="fa-solid fa-user"></i> Connexion</button>
  <button class="inscription" onclick="window.location.href='inscription/inscription.php'"><i class="fa-solid fa-scroll"></i> Inscription</button>
  </div>
  <?php } else { ?>
-  
   <p class="bienvenue"><?php echo $resultat_user_by_id['pseudo']?><i class="fa-solid fa-user-check"></i></p>
   <button  class="deconnexion" onclick="window.location.href='lib/deconnexion.php'" ><i class="fa-solid fa-circle-minus"></i> Deconnexion</button>
 <?php } ?>
