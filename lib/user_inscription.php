@@ -25,7 +25,9 @@ if(!empty( $_POST )){
 
 		if( strlen($mdp) >= 8  ){
 
-			// echo "Ok pour les MDP";
+			//  echo "Ok pour les MDP"; 
+	
+		
 
 
 			if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -65,7 +67,7 @@ if(!empty( $_POST )){
 
 		}else{
 
-			// echo "Vos MDP sont differents ou inferieur à 8 caractères";
+			 echo "Votre MDP est inferieur à 8 caractères";
 
 		}
 
